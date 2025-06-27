@@ -1,4 +1,4 @@
 FROM nginx
-RUN apt-get update -y $$ apt-get install -y vim openssh-server
+RUN apt-get update -y && apt-get install -y vim openssh-server
 COPY . /user/share/nginx/html
 EXPOSE 80
